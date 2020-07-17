@@ -1,11 +1,325 @@
 body {
-    font-family: Papyrus;
     text-align: center;
-    background-image: url(../images/ks9_background.png);
-    background-position: center;
-    background-repeat: initial
-    }
+    width: 100%;
+    position: relative;
+    /* height: 200px; */
+    background: url(../images/ks9_background.png);
+    background-size: contain;
+  }
 
-.jumbotron {
-        width: 100%;
+    /*=Typography=*/
+
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: Papyrus;
+    font-weight: 300;
+  }
+  
+  li {
+  font-size: .5em;
+  line-height: 1.5;
+  }
+  /* Navigation Bar */
+  .navbar a,
+  .sec-about p {
+    text-align: center;
+  }
+  
+  .navbar a {
+    font-size: 1em;
+  }
+  
+  /* .nav-link {
+    font-size: .5em;
+    float: right
+  } */
+  
+  .navbar .fa-external-link {
+    font-size: 1em;
+    float: right;
+  }
+  
+  .col-md-3 {
+    margin-left: 200px;
+  }  
+  
+  .col-sm-12 {
+    text-align: center;
+  }
+  
+  .sec-main {
+    position: relative;
+    height: 500px;
+    background: url(../images/ks9_background.png);
+    background-size: cover;
+  }
+  
+  .main-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: .5em;
+    color: #fff;
+    font-family: 'Orbitron';
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    padding-top: -1em;
+  }
+  
+  h2 {
+    padding-top: 7em;
+    font-family: 'Open Sans';
+    font-size: 21pt;
+    text-align: center;
+    color: #fff;
+  }
+  
+  h3 {
+    padding-top: 1em;
+    font-family: 'Open Sans';
+    font-size: 18pt;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .container > h1 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  .sec-services h2,
+  .sec-services p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 12pt;
+  }
+  
+  .sec-testimonials p {
+    font-style: italic;
+  }
+  
+  .sec-contact .btn {
+    text-transform: uppercase;
+  }
+  
+  .soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /*=Base=*/
+  
+  section {
+    padding: 1em 0;
+  }
+  
+  footer {
+    padding: 1em 0;
+  }
+  
+  form {
+    @media screen and (max-width: 768px) and (min-width: 485px) {
+      max-width: 70%;
     }
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  hr {
+    margin-bottom: 1em;
+    width: 7%;
+  }
+  
+  /*=Sections=*/
+  
+  /* About */
+  .sec-about p {
+    text-align: justify;
+  }
+  
+  .sec-about a {
+    text-decoration: underline;
+  }
+  
+  .sec-about img {
+    max-width: 100%;
+  }
+  
+  /*Services*/
+  
+  .sec-services h3 {
+    padding-top: 1em;
+    font-family: 'Open Sans';
+    font-size: 18pt;
+    text-align: center;
+    color: white;
+  }
+  
+  .sec-services {
+    background: url("https://www.lexcelera.com/wp-content/uploads/2011/01/Multicolor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    /* background-color: #666; */
+    /* background: #f9f9f9; */
+  }
+  
+  .sec-services i {
+    display: block;
+    margin: auto;
+    width: 45px;
+  }
+  
+  .sec-services .fa-paint-brush {
+    width: 64px;
+  }
+  
+  .sec-services .fa-code {
+    width: 68px
+  }
+  
+  .sec-services h2 {
+    margin: 1em 0;
+    font-size: 16pt;
+    text-align: center;
+  }
+  
+  /* Work + Education */
+  
+  .sec-folio {
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .col-sm-4 {
+    margin-bottom: -325px;
+  }
+  
+  h4 {
+    padding-top: .5em;
+    font-family: 'Orbitron';
+    font-size: 11pt;
+    text-align: center;
+    color: rgb(110, 2, 114);
+  }
+  
+  .sec-folio p {
+    font-size: 9pt;
+    text-align: center;
+  }
+  
+  .sec-folio .row {
+    margin-bottom: 1em;
+  }
+  
+  .sec-folio img {
+    max-width: 100%;
+  }
+  
+  .col-md-2 {
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+  
+  .col-md-12 button {
+    margin-left: 46%;
+  }
+  
+  /*Endorsements*/
+  .sec-testimonials p {
+    text-align: justify;
+    padding-left: 20px;
+  }
+  
+  .text-justify {
+    font-size: 11pt;
+  }
+  
+  p.text-right {
+    font-size: 11pt;
+    padding-bottom: 20pt;
+    color: #666;
+  }
+  /*Contact*/
+  
+  .form-group {
+    margin-left: 50%;
+    width: 750px;
+  }
+  .sec-contact {
+    background: #f9f9f9;
+  }
+  .sec-contact .form-control:focus {
+    border-color: red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
+  }
+  
+  .sec-contact .btn {
+    padding: .5rem 1.75rem;
+    background: #000;
+    font-size: .95rem;
+    color: #fff;
+  }
+  
+  /*Footer*/
+  
+  footer {
+    background: rgb(128, 30, 30);
+    height: 3em;
+    padding-top: -40px;
+  }
+  
+  .soc-media-ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .soc-media-ul li:not(:first-child) a {
+    margin-left: 1em;
+  }
+  
+  .soc-media-ul a {
+    display: block;
+    padding: 0.5em .65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+  }
+  
+  footer p {
+  color: white;
+  font-size: 9pt;
+  margin-top: 20px;
+  padding-bottom: 60px
+  }
+  
+  
