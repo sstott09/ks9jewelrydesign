@@ -1,34 +1,34 @@
 body {
     text-align: center;
-    width: 100%;
+    /* width: auto; */
     position: relative;
-    /* height: 200px; */
     background: url(../images/ks9_background.png);
     background-size: contain;
   }
 
-    /*=Typography=*/
+/*=Typography=*/
 
 html {
     font-size: 16px;
   }
   
-  body {
+body {
     font-family: Papyrus;
     font-weight: 300;
   }
   
-  li {
+li {
   font-size: .5em;
   line-height: 1.5;
   }
-  /* Navigation Bar */
-  .navbar a,
-  .sec-about p {
-    text-align: center;
+  
+/* Navigation Bar */
+.navbar a,
+.sec-about p {
+  text-align: center;
   }
   
-  .navbar a {
+.navbar a {
     font-size: 1em;
   }
   
@@ -106,6 +106,7 @@ html {
     font-size: 14pt;
     text-align: justify;
     line-height: 1.5;
+    padding-bottom: 20px;
   }
   
   .sec-services h2,
@@ -135,7 +136,8 @@ html {
   }
   
   footer {
-    padding: 1em 0;
+    padding: .5em;
+    position: bottom;
   }
   
   form {
@@ -157,7 +159,7 @@ html {
   
   /*=Sections=*/
   
-  /* About */
+  /* About Me */
   .sec-about p {
     text-align: justify;
   }
@@ -170,7 +172,7 @@ html {
     max-width: 100%;
   }
   
-  /*Services*/
+  Services
   
   .sec-services h3 {
     padding-top: 1em;
@@ -210,7 +212,7 @@ html {
     text-align: center;
   }
   
-  /* Work + Education */
+  /* Studio9 */
   
   .sec-folio {
     background: #f9f9f9;
@@ -253,21 +255,6 @@ html {
     margin-left: 46%;
   }
   
-  /*Endorsements*/
-  .sec-testimonials p {
-    text-align: justify;
-    padding-left: 20px;
-  }
-  
-  .text-justify {
-    font-size: 11pt;
-  }
-  
-  p.text-right {
-    font-size: 11pt;
-    padding-bottom: 20pt;
-    color: #666;
-  }
   /*Contact*/
   
   .form-group {
@@ -276,13 +263,14 @@ html {
   }
   .sec-contact {
     background: #f9f9f9;
+    object-position: relative;
   }
   .sec-contact .form-control:focus {
     border-color: red;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
   }
   
-  .sec-contact .btn {
+  .btn {
     padding: .5rem 1.75rem;
     background: #000;
     font-size: .95rem;
@@ -292,9 +280,10 @@ html {
   /*Footer*/
   
   footer {
-    background: rgb(128, 30, 30);
+    background: rgb(51, 61, 56);
     height: 3em;
-    padding-top: -40px;
+    padding-top: -60px;
+    padding-bottom: 10px;
   }
   
   .soc-media-ul {
